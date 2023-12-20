@@ -5,8 +5,11 @@ public class ConditionalStatements {
         //IfElse();
         //LargestNo();
         //OddEven();
-        ElseIf();
-
+        //ElseIf();
+        //Largestof3();
+        //Ternary();
+        //PassOrFail();
+        Switch();
     }
 
     static void IfElse(){
@@ -64,5 +67,50 @@ public class ConditionalStatements {
         }
     }
 
+    static void Largestof3(){
+        int a = 1, b = 2, c = 3;
 
-}            
+        if( (a>=b) && (a>=c)){
+            System.out.println("A is largest");
+        }
+        else if(b>=c){
+            System.out.println("B is largest");
+        }
+        else{
+            System.out.println("C is largest");
+        }            
+    }
+
+    static void Ternary(){
+        int number = 73;
+
+        //ternary
+        String type = ((number%2)==0)? "Even" : "Odd";
+        System.out.println(type);
+    }
+
+    static void PassOrFail(){
+        Scanner sc = new Scanner(System.in);
+        int marks = sc.nextInt();
+
+        String RC = (marks>=33) ? "Pass" : "Fail";
+        System.out.println(RC);
+        sc.close();
+    }
+
+    static void Switch(){
+        int number = 2;
+        switch(number){
+            case 1 : System.out.println("PS4");
+            break;
+            case 2 : System.out.println("PS5");
+            break;
+            case 3 : System.out.println("Nintendo");
+            break;
+            case 4 : System.out.println("PC");
+            break;
+            default : System.out.println("Mobile Phone");
+        }
+    }
+
+}  
