@@ -24,7 +24,7 @@ public class CondStatQues {
         System.out.println("Enter temperature: ");
         double temp = sc.nextDouble();
 
-        String RC = (temp>100)? "You have fever" : "You dont have fever";
+        String RC = (temp>100)? "You have fever" : "You don't have fever";
         System.out.println(RC);
         sc.close();
     }
