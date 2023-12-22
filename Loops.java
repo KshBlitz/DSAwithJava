@@ -4,7 +4,10 @@ public class Loops {
         //Counter();
         //SumNatural();
         //For();
-        SqPattern();
+        //SqPattern();
+        //Reverse();
+        //Rev2();
+        DoWhileLoop();
     }
 
     static void Counter(){
@@ -40,6 +43,35 @@ public class Loops {
          for(int line = 1; line <=4; line++){
             System.out.println("****");
          }
+    }  
+    
+    static void Reverse(){
+        int n = 1;
+        while(n>0){
+            int lastDigit = n%10;
+            System.out.print(lastDigit);
+            n = n/10;
+        }
     }
-     
+
+    static void Rev2(){
+        int n = 10899;
+        int rev = 0;
+
+        while(n>0){
+            int lastDigit = n%10;
+            rev = (rev*10) + lastDigit;
+            n = n/10;
+        }
+        System.out.println(rev);
+    }
+
+    static void DoWhileLoop(){
+
+    int i = 0;
+        do{
+            System.out.println("Will this go on forever");
+            i++;
+        }while(i<4);
+    }
 }
