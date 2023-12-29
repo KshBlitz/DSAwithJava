@@ -1,5 +1,3 @@
-package Methods.Functions;
-
 public class Product {
     public static void main(String[] args) {
         int a = 5;
