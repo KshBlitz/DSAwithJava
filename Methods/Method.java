@@ -3,7 +3,7 @@ import java.util.*;
 public class Method {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter two numbers: ");
+        System.out.println("Enter two number: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
         int sum = CalcSum(a, b);
@@ -15,3 +15,4 @@ public class Method {
         return sum;
     }
 }
+ 
